@@ -1,146 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name</title>
-<style>
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #111;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-  }
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  a {
-    color: #007acc;
-    text-decoration: none;
-  }
+<!--                                                               -->
+<!-- Consider inlining css to reduce the number of requested files -->
+<!--                                                               -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/eylon.css">
 
-  a:hover {
-    text-decoration: underline;
-  }
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>Eylon Caplan</title>
 
-  header {
-    text-align: left;
-    padding: 80px 20px 40px 20px;
-    max-width: 800px;
-    margin: auto;
-  }
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript" src="https://rajkumar-pujari.com/js/bootstrap.min.js"></script>
 
-  header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-  }
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  header p {
-    font-size: 1.2rem;
-    color: #555;
-  }
+  ga('create', 'UA-79894772-1', 'auto');
+  ga('send', 'pageview');
 
-  nav {
-    max-width: 800px;
-    margin: 20px auto 60px auto;
-    display: flex;
-    gap: 20px;
-    font-weight: bold;
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-
-  section {
-    max-width: 800px;
-    margin: auto;
-    padding: 60px 20px;
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    border-bottom: 2px solid #007acc;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 0.9rem;
-    color: #777;
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 2.2rem;
-    }
-
-    nav {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-</style>
+</script>
 </head>
+
 <body>
+  <div class="container">
+    <center><h2>Eylon Caplan</h2></center>
+    <hr class="nomargin">
+    <nav class="mynavbar">
+      <a href="index.html"><span class="focus">HOME</span></a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="software.html">SOFTWARE</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <hr class="nomargin">
+    <br>
 
-<!-- Header -->
-<header>
-  <h1>Your Name</h1>
-  <p>PhD Student | Researcher | Developer</p>
-</header>
+    <div class="content row">
+      <div class="col-md-8">
+		<p>
+		Hello! I am a second-year Ph.D. student in the Department of Computer Science at Purdue University, advised by <a href="https://www.cs.purdue.edu/homes/dgoldwas/">Prof. Dan Goldwasser</a>. My work centers on using natural language processing to understand and draw conclusions from large amounts of unstructured data. In particular, I build scalable and interpretable NLP systems that reason about human behavior, beliefs, and values as expressed in noisy real-world corpora—especially social media.
+		</p>
+		
+		<p>
+			Recently, I developed <a href="https://arxiv.org/abs/2504.07228">ConceptCarve</a>, a framework for identifying how abstract social concepts are expressed across communities by combining language model reasoning with scalable retrieval. I also introduced the <a href="https://arxiv.org/abs/2504.04640">Splits!</a> dataset, a large Reddit-based dataset with demographic and topical annotations which allows for investigation of how different demographic groups communicate about shared topics. From a technical standpoint, my work has extensively involved large-scale data processing, retrieval, reranking, text clustering, and dataset design, collection, and validation.
+			</p>
+			
+			
+		
+		<p>
+		Before coming to Purdue, I earned my B.Sc. in Computer Science and Mathematics from the University of Nebraska–Lincoln. There, I worked with <a href="https://cse-apps.unl.edu/facdb/users/15/details">Prof. Stephen Scott</a> on continuous-layered neural architectures guided by integral equations, and with <a href="https://mrhasan-ai.github.io/index.html">Prof. M. R. Hasan</a> on improving classification performance for rare classes.
+		</p>
+			
+      </div>
+      <div class="col-md-4">
+        <img alt="" src="images/website_image.jpg" height="400">
+      </div>
+    </div>
 
-<!-- Navigation -->
-<nav>
-  <a href="index.html">Home</a>
-  <a href="publications.html">Publications</a>
-  <a href="projects.html">Projects</a>
-  <a href="cv.html">CV</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <br>
+    <hr class="nomargin">
+    <br>
 
-<!-- About Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I’m [Your Name], a PhD student in [Field] at [University]. My research focuses on [topics].</p>
-  <p>I’m passionate about [skills/interests], and I enjoy sharing my work with the community.</p>
-</section>
+    <div class="content row">
+      <div class="col-md-12">
+        <p>News</p>
+        <div class="myBox">
+          <ul class="news">
+            <!-- newest first -->
+	    <li><strong>May 2025 —</strong>
+              Our paper, <em>VIBE: Can a VLM Read the Room?</em>&nbsp;&nbsp;has been accepted to Findings of EMNLP 2025!
+              (<a href="https://arxiv.org/abs/2506.11162">arXiv</a>).
+            </li>
 
-<!-- Projects Preview Section -->
-<section id="projects-preview">
-  <h2>Selected Projects</h2>
-  <p>Here are a few of my recent projects. Check the Projects page for the full list.</p>
-  <ul>
-    <li><strong>Project One:</strong> Short description. <a href="projects.html#project-one">Learn more</a></li>
-    <li><strong>Project Two:</strong> Short description. <a href="projects.html#project-two">Learn more</a></li>
-    <li><strong>Project Three:</strong> Short description. <a href="projects.html#project-three">Learn more</a></li>
-  </ul>
-</section>
+            <li><strong>May 2025 —</strong>
+              Submitted <em>VIBE: Can a VLM Read the Room?</em> 
+              <span style="font-style:italic;">(under review)</span> (<a href="https://arxiv.org/abs/2506.11162">arXiv</a>).
+            </li>
 
-<!-- Contact Preview Section -->
-<section id="contact-preview">
-  <h2>Contact</h2>
-  <p>Get in touch via email or connect on social media:</p>
-  <p>
-    <a href="mailto:youremail@example.com">Email</a> |
-    <a href="https://github.com/yourusername">GitHub</a> |
-    <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-  </p>
-</section>
+            <li><strong>May 2025 —</strong>
+              Our paper, <em>ConceptCarve: Dynamic Realization of Evidence</em>
+              has been accepted to ACL 2025 Main Conference!
+              (<a href="https://aclanthology.org/2025.acl-long.1014/">link</a>).
+            </li>
 
-<!-- Footer -->
-<footer>
-  &copy; 2025 Your Name. All rights reserved.
-</footer>
+            <li><strong>Apr 2025 —</strong>
+              Submitted <em>Splits! A Flexible Dataset for Evaluating a Model’s Demographic Social Inference</em>
+               <span style="font-style:italic;">(under review)</span>
+              (<a href="https://arxiv.org/abs/2504.04640">arXiv</a>).
+            </li>
 
+            <li><strong>Jan 2025 —</strong>
+              Released <em>ACL Searcher</em>, an open-source semantic search tool for ACL paper abstracts using ColBERT
+              (<a href="https://github.com/eyloncaplan/acl-searcher">GitHub</a>).
+            </li>
+
+            <li><strong>Dec 2024 —</strong>
+              Submitted <em>ConceptCarve: Dynamic Realization of Evidence</em>
+              to ACL 2025 <span style="font-style:italic;">(under review)</span>
+              (<a href="https://arxiv.org/abs/2504.07228">arXiv</a>).
+            </li>
+
+            <li><strong>Aug 2023 —</strong>
+              Started my Ph.D. in Computer Science at Purdue University (advisor: Dan Goldwasser).
+            </li>
+
+            <li><strong>Aug 2020 —</strong>
+              Completed a second UCARE undergraduate research fellowship at UNL with Prof. Stephen Scott. Presented
+              <em>Continuous-Layered Dense Artificial Neural Networks</em> at the
+              <a href="https://mediahub.unl.edu/media/17557">2020 Virtual UCARE Symposium</a>.
+            </li>
+
+            <li><strong>Aug 2019 —</strong>
+              Completed a UCARE undergraduate research fellowship at UNL with Prof. M. R. Hasan. Presented
+              <em>Improving Accuracy of Rare Classes in Machine Learning Classifiers</em> at the
+              <a href="https://mediahub.unl.edu/media/13956">2019 Virtual UCARE Symposium</a>, and was featured in a
+              <a href="https://computing.unl.edu/cse-student-presents-machine-learning-project-virtual-summer-research-symposium-0/">UNL article</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
