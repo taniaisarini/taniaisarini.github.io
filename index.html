@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
-    h1 { color: #2c3e50; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    text-align: left;
+    padding: 80px 20px 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  nav {
+    max-width: 800px;
+    margin: 20px auto 60px auto;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  section {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]</h1>
-  <p>Welcome to my personal website!</p>
-  <p>Check out my <a href="https://github.com/yourusername">GitHub</a> or <a href="https://linkedin.com/in/yourusername">LinkedIn</a>.</p>
+
+<!-- Header -->
+<header>
+  <h1>Your Name</h1>
+  <p>PhD Student | Researcher | Developer</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="publications.html">Publications</a>
+  <a href="projects.html">Projects</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I’m [Your Name], a PhD student in [Field] at [University]. My research focuses on [topics].</p>
+  <p>I’m passionate about [skills/interests], and I enjoy sharing my work with the community.</p>
+</section>
+
+<!-- Projects Preview Section -->
+<section id="projects-preview">
+  <h2>Selected Projects</h2>
+  <p>Here are a few of my recent projects. Check the Projects page for the full list.</p>
+  <ul>
+    <li><strong>Project One:</strong> Short description. <a href="projects.html#project-one">Learn more</a></li>
+    <li><strong>Project Two:</strong> Short description. <a href="projects.html#project-two">Learn more</a></li>
+    <li><strong>Project Three:</strong> Short description. <a href="projects.html#project-three">Learn more</a></li>
+  </ul>
+</section>
+
+<!-- Contact Preview Section -->
+<section id="contact-preview">
+  <h2>Contact</h2>
+  <p>Get in touch via email or connect on social media:</p>
+  <p>
+    <a href="mailto:youremail@example.com">Email</a> |
+    <a href="https://github.com/yourusername">GitHub</a> |
+    <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Your Name. All rights reserved.
+</footer>
+
 </body>
 </html>
