@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/eylon.css">
+
+<style>
+  a, a:visited {
+    color: #0066CC;
+  }
+  b, strong {
+    font-weight: 700;
+  }
+  /* Trivia page specific */
+  #feedback {
+    color: red;
+    margin-top: 10px;
+  }
+</style>
+
+<title>About - Trivia Access</title>
+
+<script type="text/javascript" language="javascript" src="https://rajkumar-pujari.com/js/bootstrap.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79894772-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+  <div class="container">
+    <center><h2>Tania Chakraborty</h2></center>
+    <hr class="nomargin">
+    <nav class="mynavbar">
+      <a href="index.html">HOME</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="cv.html">CV</a>
+      <a href="about-protect.html"><span class="focus">ABOUT</span></a>
+    </nav>
+    <hr class="nomargin">
+    <br>
+
+    <div class="content row">
+      <div class="col-md-8">
+        <p>Answer the trivia question correctly to access the About page!</p>
+        <p id="question" style="font-weight:700;"></p>
+        <input type="text" id="answer" placeholder="Your answer" class="form-control" style="width:50%; margin-bottom:10px;">
+        <button class="btn btn-primary" onclick="checkAnswer()">Submit</button>
+        <p id="feedback"></p>
+      </div>
+      <div class="col-md-4">
+        <img alt="tania" src="images/sphinx.png" height="500">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Trivia questions defined in-page
+    const triviaQuestions = [
+    { question: "What is the name of Harry Potter’s owl?", answer: "Hedwig" },
+    { question: "Who was the Half-Blood Prince?", answer: "Severus Snape" },
+    { question: "What type of creature is Dobby?", answer: "House-elf" },
+    { question: "What position does Harry play on his Quidditch team?", answer: "Seeker" },
+    { question: "Which vault in Gringotts did Hagrid and Harry visit in the first book?", answer: "Vault 713" },
+    ];
+
+    // Pick a random question
+    const currentQuestion = triviaQuestions[Math.floor(Math.random() * triviaQuestions.length)];
+    document.getElementById('question').innerText = currentQuestion.question;
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
+      const correctAnswer = currentQuestion.answer.trim().toLowerCase();
+      if (userAnswer === correctAnswer) {
+        window.location.href = "about.html";
+      } else {
+        document.getElementById('feedback').innerText = "Incorrect! Try again.";
+      }
+    }
+  </script>
+</body>
+</html>

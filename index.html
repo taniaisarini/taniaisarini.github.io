@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!-- The DOCTYPE declaration above will set the     -->
 <!-- browser's rendering engine into                -->
@@ -14,13 +13,25 @@
 <!--                                                               -->
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/eylon.css">
+
+<style>
+  /* Make all links blue like publications page */
+  a, a:visited {
+    color: #0066CC;
+  }
+
+  /* Make bold text really bold */
+  b, strong {
+    font-weight: 700; /* Open Sans: 700 is bold */
+  }
+</style>
 
 <!--                                           -->
 <!-- Any title is fine                         -->
 <!--                                           -->
-<title>Eylon Caplan</title>
+<title>Tania Chakraborty</title>
 
 <!--                                           -->
 <!-- This script loads your compiled module.   -->
@@ -43,14 +54,14 @@
 
 <body>
   <div class="container">
-    <center><h2>Eylon Caplan</h2></center>
+    <center><h2>Tania Chakraborty</h2></center>
     <hr class="nomargin">
     <nav class="mynavbar">
       <a href="index.html"><span class="focus">HOME</span></a>
       <a href="publications.html">PUBLICATIONS</a>
-      <a href="software.html">SOFTWARE</a>
       <a href="contact.html">CONTACT</a>
       <a href="cv.html">CV</a>
+      <a href="about-protect.html">ABOUT</a>
     </nav>
     <hr class="nomargin">
     <br>
@@ -58,22 +69,20 @@
     <div class="content row">
       <div class="col-md-8">
 		<p>
-		Hello! I am a second-year Ph.D. student in the Department of Computer Science at Purdue University, advised by <a href="https://www.cs.purdue.edu/homes/dgoldwas/">Prof. Dan Goldwasser</a>. My work centers on using natural language processing to understand and draw conclusions from large amounts of unstructured data. In particular, I build scalable and interpretable NLP systems that reason about human behavior, beliefs, and values as expressed in noisy real-world corpora—especially social media.
+		I am a <b>3rd year PhD student</b> in the Department of Computer Science at Purdue University, West Lafayette. My research area is <b>NLP</b> and I am advised by <a href="https://www.cs.purdue.edu/people/faculty/dgoldwas.html" target="_blank">Prof. Dan Goldwasser</a>. Broadly, I am interested in studying language through computational methods, with a focus on <b>social</b>, <b>cultural</b> and <b>multimodal</b> contexts. I am also intersted in the interplay between NLP and traditional linguistics, particularly as it applies to <b>lower resource languages</b>.
 		</p>
 		
 		<p>
-			Recently, I developed <a href="https://arxiv.org/abs/2504.07228">ConceptCarve</a>, a framework for identifying how abstract social concepts are expressed across communities by combining language model reasoning with scalable retrieval. I also introduced the <a href="https://arxiv.org/abs/2504.04640">Splits!</a> dataset, a large Reddit-based dataset with demographic and topical annotations which allows for investigation of how different demographic groups communicate about shared topics. From a technical standpoint, my work has extensively involved large-scale data processing, retrieval, reranking, text clustering, and dataset design, collection, and validation.
-			</p>
-			
-			
+      My recently published paper, <a href="https://arxiv.org/abs/2506.11162">VIBE</a> (Findings of EMNLP, 2025), investigated the social intelligence capabilities of Visual Language Models (VLMs). The paper revealed a previously overlooked limitation in VLMs: they struggle with making social pragmatic inferences about identified visual elements. To address this, the paper introduced a dataset targeted at evaluating this limitation.
+		</p>
 		
 		<p>
-		Before coming to Purdue, I earned my B.Sc. in Computer Science and Mathematics from the University of Nebraska–Lincoln. There, I worked with <a href="https://cse-apps.unl.edu/facdb/users/15/details">Prof. Stephen Scott</a> on continuous-layered neural architectures guided by integral equations, and with <a href="https://mrhasan-ai.github.io/index.html">Prof. M. R. Hasan</a> on improving classification performance for rare classes.
+      Before starting my PhD, I worked for three years as a Software Engineer at Google, contributing to multiple teams, including the Languages and Linguistics team, where my work focused on low-resource languages. (see <a href="cv.html">CV</a> for details). I earned my Bachelor's degree in Electrical and Computer Engineering from Purdue University in 2019.
 		</p>
 			
       </div>
       <div class="col-md-4">
-        <img alt="" src="images/website_image.jpg" height="400">
+        <img alt="tania" src="images/tania-not-profess.JPG" height="500">
       </div>
     </div>
 
@@ -87,55 +96,7 @@
         <div class="myBox">
           <ul class="news">
             <!-- newest first -->
-	    <li><strong>May 2025 —</strong>
-              Our paper, <em>VIBE: Can a VLM Read the Room?</em>&nbsp;&nbsp;has been accepted to Findings of EMNLP 2025!
-              (<a href="https://arxiv.org/abs/2506.11162">arXiv</a>).
-            </li>
-
-            <li><strong>May 2025 —</strong>
-              Submitted <em>VIBE: Can a VLM Read the Room?</em> 
-              <span style="font-style:italic;">(under review)</span> (<a href="https://arxiv.org/abs/2506.11162">arXiv</a>).
-            </li>
-
-            <li><strong>May 2025 —</strong>
-              Our paper, <em>ConceptCarve: Dynamic Realization of Evidence</em>
-              has been accepted to ACL 2025 Main Conference!
-              (<a href="https://aclanthology.org/2025.acl-long.1014/">link</a>).
-            </li>
-
-            <li><strong>Apr 2025 —</strong>
-              Submitted <em>Splits! A Flexible Dataset for Evaluating a Model’s Demographic Social Inference</em>
-               <span style="font-style:italic;">(under review)</span>
-              (<a href="https://arxiv.org/abs/2504.04640">arXiv</a>).
-            </li>
-
-            <li><strong>Jan 2025 —</strong>
-              Released <em>ACL Searcher</em>, an open-source semantic search tool for ACL paper abstracts using ColBERT
-              (<a href="https://github.com/eyloncaplan/acl-searcher">GitHub</a>).
-            </li>
-
-            <li><strong>Dec 2024 —</strong>
-              Submitted <em>ConceptCarve: Dynamic Realization of Evidence</em>
-              to ACL 2025 <span style="font-style:italic;">(under review)</span>
-              (<a href="https://arxiv.org/abs/2504.07228">arXiv</a>).
-            </li>
-
-            <li><strong>Aug 2023 —</strong>
-              Started my Ph.D. in Computer Science at Purdue University (advisor: Dan Goldwasser).
-            </li>
-
-            <li><strong>Aug 2020 —</strong>
-              Completed a second UCARE undergraduate research fellowship at UNL with Prof. Stephen Scott. Presented
-              <em>Continuous-Layered Dense Artificial Neural Networks</em> at the
-              <a href="https://mediahub.unl.edu/media/17557">2020 Virtual UCARE Symposium</a>.
-            </li>
-
-            <li><strong>Aug 2019 —</strong>
-              Completed a UCARE undergraduate research fellowship at UNL with Prof. M. R. Hasan. Presented
-              <em>Improving Accuracy of Rare Classes in Machine Learning Classifiers</em> at the
-              <a href="https://mediahub.unl.edu/media/13956">2019 Virtual UCARE Symposium</a>, and was featured in a
-              <a href="https://computing.unl.edu/cse-student-presents-machine-learning-project-virtual-summer-research-symposium-0/">UNL article</a>.
-            </li>
+            <li>Coming soon...</li>
           </ul>
         </div>
       </div>
